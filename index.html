@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="kyewords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+
+
+   
+
+
+  <main class="container mt-5 l-h">
+    <div class="mb-3">
+      <label for="prodeutNameInput" class="form-label">product name:</label>
+      <input type="text" required="required" class="form-control" id="prodeutNameInput" aria-describedby="emailHelp">
+      <div class="alert alert-primary d-none " id="alert" role="alert">
+        A simple primary alert—check it out!
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="prodeutPriceInput" class="form-label">product price:</label>
+      <input type="number" required="required" class="form-control" id="prodeutPriceInput" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="prodeutCategoryInput" class="form-label">product category:</label>
+      <input type="text" required="required" class="form-control" id="prodeutCategoryInput" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="prodeutDescriptionInput" class="form-label">product description:</label>
+      <input type="text" required="required" class="form-control" id="prodeutDescriptionInput">
+    </div>
+    
+    <button type="submit" onclick="addProdeut()" class="btn btn-outline-info">Submit</button>
+
+  </main>
+
+
+
+  <main class=" container">
+    <div > <input onkeyup="searchProduct(this.value)" class="form-control w-50 mt-5 m-auto " placeholder="search" type="search"></div>
+    <table class="table w-75 m-auto col">
+      <thead>
+        <tr>
+          <th scope="col">Name </th>
+          <th scope="col">index</th>
+          <th scope="col">price</th>
+          <th scope="col">category</th>
+          <th scope="col">Desc</th>
+          <th scope="col">upate</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody" >
+    
+       
+      </tbody>
+    </table>
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class=" col-md-3">
+  <div class="item">
+    <h1></h1>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
